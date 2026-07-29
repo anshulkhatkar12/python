@@ -17,6 +17,13 @@ year = int(input("year:"))
 print(is_leap(year))
 
 #printin a string
- n = int(input())
- for i in range (1,n+1):
+n = int(input())
+for i in range (1,n+1):
     print (i, end ='')
+
+
+#matrix multiplication
+n=int(input())
+A= numpy.array([input().split() for i in range(n)],int)
+B= numpy.array([input().split() for i in range(n)],int)
+print(numpy.dot(A,B))
