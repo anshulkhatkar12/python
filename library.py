@@ -1,16 +1,15 @@
-import random
-coin=random.choice (["Heads", "Tails"])
-print (coin)
+import sys
+if len(sys.argv) < 4:
+    print("few arguments")
+elif len(sys.argv) > 4:
+    print("too many arguments")
+else:
+    print ("welcome", sys.argv[1])
+    print ("youre", sys.argv[2], "years old")
+    print ("you live in", sys.argv[3])
+for arg in sys.argv[1:]:
+    print (arg)
 
-number= random.randint(1, 10)
-print (number)
-
-cards= ["Ace", "King", "Queen", "Jack"]
-random.shuffle(cards)
-for card in cards:
-    print (card)
 
 
-import statistics
-print (statistics.mean([1, 2, 3, 4, 5]))
-
+    
